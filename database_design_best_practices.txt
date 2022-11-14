@@ -1,0 +1,128 @@
+Backend engineering 
+
+	Design, build and maintain server-side web applications
+
+	Common terms: client-server architecture, networking, APIs, web frameworks, platform, micro
+	service, databases, web fundamentals, operating systems
+
+	Tech stack: Java, PHP, .NET, C#, Ruby, Python, REST, AWS, Node, SQL, NoSQL
+
+
+Database
+	
+	collection of organised data
+	want to store retrieve and manage data
+	supports different data types and formats
+	Tools / MySQL, Oracle DB, MongoDB, DynamoDB, Redis
+	Supports features such as data redundancy, backup, replication, querying, scalability
+	different database types/ centralised, distributed, nose, cloud, relational, network, object oriented, hierarchical
+	depending on data or business case you can categories what database you are choosing
+
+
+Relational Database vs non relational 
+
+
+	Relational 
+
+		collection of one or more tables
+		data is stored in a tabular format
+		each table has rows and columns
+		tables have relationships between them 
+		optimal to store structured data
+		SQL to write and query data
+		ACID properties compliant
+		Data modification statements are called transactions
+		transactions = commands to read write update data
+		Ideal for banking transactions, insurance policies and wealth management data
+		Tools: MySQL, PostgreSQL, Oracle DB
+		You as a company/individual can decide which database to choose 
+		Can be how much data the database supports, how can you scale it, 
+		how indexing works, querying 
+
+		ACID properties
+
+			atomicity : 
+					any data modifications done per transaction is a single
+					operation, completed successfully or failed
+					
+			consistency : 
+					data is in valid and correct state after the end of a
+					transaction 
+			isolation : 
+					multiple transactions executed in isolation 
+			durability : 
+					data modifications are permanent after successful 
+					execution of transactions
+
+
+		Operations 
+			create, drop, alter table
+			insert, update, delete record
+			grant, revoke permissions to a user
+			commit, rollback, save transaction 
+			select data for querying
+	
+	
+	Non relational database
+	
+		various non tabular formatted data
+		NoSQL = not only SQL
+		ie documents, key-value pairs, graph (node, edges)
+		data model varies per database
+		ideal for big data sets
+		
+		BASE properties compliant:
+			basically available: as per CAP theorem 
+			soft state : data my change shout new input:updates
+			eventual consistency: ?
+
+		CAP theorem:
+			consistency: data consistency across systems
+			availability: data available but not most updated
+			partition tolerance: data bailable despite of system failures
+			only two properties can be achieved
+
+	
+	
+
+Relational vs Non relational databases
+
+|	RELATIONAL			|	NON RELATIONAL				|
+
+	* ACID compliant			* ACID sacrificed for high scalability 
+						and eventual consistency 
+
+	* SQL for efficient data querying	* Limited data querying capacity
+
+	Supports structured data 		Supports structured, semi structured, 
+	models					unstructured data models
+			
+	Rows and columns data structure		Graph, JSON, doc, column wide data 
+						structures
+
+
+Design practices
+
+	Keep simple
+	Consider future modifications and growing volumes of data
+	Choose correct software for data type and business needs I.e. increase in data vs costs
+	Reduce data redundancy (to reduce cost for ex)
+	Accommodate for data analytics and reporting requirements (to improve on features, user XP)
+	Determine relationships as per business needs (I.e. are IP addresses needed, etc.)
+	Know when to choose SQL vs NoSQL 
+	Optimise data for querying
+	Determine performance requirements
+	Understand maintenance challenges
+	Leverage data modelling techniques
+
+
+Data modeling
+
+	Organise and determine relationships between data
+	Define constraints and select data types
+	Structure data for business needs
+	
+
+ 
+
+	
